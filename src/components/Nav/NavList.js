@@ -1,5 +1,6 @@
 import React from 'react';
 import NavItem from './NavItem';
+import './style.scss';
 
 const List = [
   {
@@ -17,13 +18,24 @@ const List = [
     linkName: 'places',
     path: '/places',
   },
+  {
+    id: 4,
+    linkName: 'add new place',
+    path: '/place-form',
+  },
 ];
 
-function NavList({ ref, openMenu }) {
+function NavList({ navListClass, defaultClass, navLinkClass, handleClick }) {
   return (
-    <ul className={`navList ${openMenu}`} ref={ref}>
+    <ul className={`${defaultClass} ${defaultClass}${navListClass}`}>
       {List.map((el) => (
-        <NavItem key={`link-${el.id}`} linkName={el.linkName} to={el.path} />
+        <NavItem
+          key={`link-${el.id}`}
+          linkName={el.linkName}
+          to={el.path}
+          navLinkClass={navLinkClass}
+          handleClick={handleClick}
+        />
       ))}
     </ul>
   );

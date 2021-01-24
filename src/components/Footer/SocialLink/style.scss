@@ -1,0 +1,12 @@
+@import '../../../constants/Colors.scss';
+
+.SocialLink__icon {
+  margin: 5px;
+  width: 60px;
+  height: auto;
+  fill: #ffffff;
+  transition: ease-in-out 0.3s;
+  &:hover {
+    fill: $color-4;
+  }
+}
