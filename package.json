@@ -9,7 +9,11 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
     "uuid": "^8.3.1",
-    "web-vitals": "^0.2.4"
+    "web-vitals": "^0.2.4",
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-brands-svg-icons": "^5.15.1",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.14"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -43,10 +47,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.32",
-    "@fortawesome/free-brands-svg-icons": "^5.15.1",
-    "@fortawesome/free-solid-svg-icons": "^5.15.1",
-    "@fortawesome/react-fontawesome": "^0.1.14"
-  }
+  "devDependencies": {}
 }
